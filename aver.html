@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>qvc?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    img {
+      max-width: 400px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>sale asadito con los pibes el sabado?</h1>
+  <button onclick="respuesta('si')">Sí</button>
+  <button onclick="respuesta('no')">No</button>
+
+  <div id="respuesta"></div>
+  <img id="imagen" style="display:none;" />
+
+  <script>
+    function respuesta(opcion) {
+      const div = document.getElementById("respuesta");
+      const img = document.getElementById("imagen");
+
+      div.innerText = "NEEDEAAAAAAA";
+
+      if (opcion === "si") {
+        div.innerText += "\naltoke te espero con el fernecito";
+        img.src = "https://media1.tenor.com/m/0yjH6i9EGKgAAAAd/fernets-night.gif"; // imagen divertida
+        img.style.display = "block";
+      } else if (opcion === "no") {
+        div.innerText += "\nchupaloooo";
+        img.src = "https://pbs.twimg.com/media/EQoCLPTWoAAUACe.jpg"; // otra imagen
+        img.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
